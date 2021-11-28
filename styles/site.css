@@ -1,0 +1,168 @@
+body{
+    /* Fond d'écran */
+    background-image: url("../images/Fond.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Favoris */
+.title{
+    color: rgb(255,255,255);
+    font-family:initial;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+li { 
+    /* Style boutons */
+    width: 150px;
+    height: 22.5px;
+    border-radius: 10px;
+    padding: 6px;
+    margin-bottom: 6px;
+    background-color: rgba(0,0,0,0.1);
+
+    /* Contenu boutons */
+    color: rgb(255,255,255);
+    text-align: left;
+
+    /* Propriétés du menu */
+    user-select: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block; 
+    position: relative; 
+} 
+
+/* Cache par défaut les sous-menus */
+ul.sous_menu { 
+    display: none;
+} 
+
+/* Propriétés hover */
+li:hover { 
+    color: rgb(0,255,255); 
+    background-color: rgba(0,0,255,0.2); 
+} 
+
+/* Propriétés hover pour les sous-menus */
+li:hover > ul.sous_menu { 
+    display: block; 
+    position: absolute; 
+    left: 80%; 
+}
+
+/* Liens */
+li a {
+    color:rgb(255,255,255); 
+    text-decoration:none;
+    cursor:pointer;
+}
+
+/* Propriétés hover des liens */
+li a:hover { 
+    color: rgb(0,255,255); 
+} 
+
+/* Séparation image/texte */
+.sections {
+    display: grid;
+    grid-template-columns: 25px auto;
+}
+
+/* Séparation image/texte/icone sous-menu */
+.sections-sous_menu {
+    display: grid;
+    grid-template-columns: 25px auto 10px;
+}
+
+/* Séparation texte/icone sous-menu */
+.musique-sous_menu{
+    display: grid;
+    grid-template-columns: auto 10px;
+}
+
+/* Changement display & marge */
+.table{
+    display: table;
+    margin-left: 5px;
+}
+
+/* Mise-en-page sections avec images */
+.sections_image-align{
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+/* Caractéristiques générales des images */
+.images{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Insertion flèche sous-menu */
+.image-submenu{
+    background-image: url("../images/ICON_submenu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Images Sections Principales */
+#image-musique{
+    background-image: url("../images/music_icon.png");
+}
+#image-nouvelles{
+    background-image: url("../images/news_icon.png");
+}
+#image-jeux{
+    background-image: url("../images/game_icon.png");
+}
+#image-contacts{
+    background-image: url("../images/contact_icon.png");
+}
+
+/* Images Nouvelles */
+#image-RadioCan{
+    background-image: url("../images/radio_canada_icon.png");
+}
+#image-NBC{
+    background-image: url("../images/nbc_icon.png");
+}
+#image-CNN{
+    background-image: url("../images/cnn_icon.png");
+}
+#image-meteo{
+    background-image: url("../images/meteo_icon.png");
+}
+
+/* Images Services Météo */
+#image-meteoMedia{
+    background-image: url("../images/meteo_media_icon.png");
+}
+#image-ouragan{
+    background-image: url("../images/Hurricane_icon.png");
+}
+#image-wunderGround{
+    background-image: url("../images/wunder_icon.png");
+}
+
+/* Images Jeux */
+#image-backgammon{
+    background-image: url("../images/backgammon_icon.png");
+}
+#image-reversi{
+    background-image: url("../images/reversi_icon.png");
+}
+
+/* Images Contacts */
+#image-facebook{
+    background-image: url("../images/facebook_icon.png");
+}
+#image-twitter{
+    background-image: url("../images/twitter_icon.png");
+}
+#image-google{
+    background-image: url("../images/google_plus_icon.png");
+}
